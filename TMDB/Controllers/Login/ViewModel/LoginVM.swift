@@ -53,7 +53,7 @@ class LoginVM: StatefulVM<LoginVMStateChange> {
             
         } onFailure: { (errorString, errorType) in
             
-            self.emit(.networkFailure(errorString ?? "Please check your username or password."))
+            self.emit(.networkFailure("Please check your username or password."))
         }
     }
     
