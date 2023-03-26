@@ -72,8 +72,9 @@ class SearchVC: BaseVC {
 }
 
 extension SearchVC: UISearchBarDelegate {
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        self.viewModel.searchMovies(text: searchText)
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let text = searchBar.text else { return }
+        self.viewModel.searchMovies(text: text)
     }
 }
 
