@@ -214,13 +214,7 @@ class MovieInfoCell: BaseTableViewCell {
     }
     
     func setupCell(movie: DetailResponseModel) {
-        if let countries = movie.productionCountries {
-            for i in countries {
-                if let country = i.iso3166 {
-                    self.country = ",\(country)"
-                }
-            }
-        }
+        setCountry(movie)
         if let link = movie.posterPath {
             ImageRequest.setImg(image: posterImageView, imgLink: "http://image.tmdb.org/t/p/w500\(link)")
         }
@@ -247,6 +241,16 @@ class MovieInfoCell: BaseTableViewCell {
             genresString = genresList.joined(separator: ",")
         }
         return genresString
+    }
+    
+    private func setCountry(_ movie: DetailResponseModel) {
+        if let countries = movie.productionCountries {
+            for i in countries {
+                if let country = i.iso3166 {
+                    self.country = ",\(country)"
+                }
+            }
+        }
     }
 }
 
