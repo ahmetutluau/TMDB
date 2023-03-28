@@ -8,6 +8,7 @@
 import UIKit
 
 class MovieInfoCell: BaseTableViewCell {
+    var country = ""
     
     private lazy var containerView: BaseView = {
         let view = BaseView(backgroundColor: .clear)
@@ -213,10 +214,17 @@ class MovieInfoCell: BaseTableViewCell {
     }
     
     func setupCell(movie: DetailResponseModel) {
+        if let countries = movie.productionCountries {
+            for i in countries {
+                if let country = i.iso3166 {
+                    self.country = ",\(country)"
+                }
+            }
+        }
         if let link = movie.posterPath {
             ImageRequest.setImg(image: posterImageView, imgLink: "http://image.tmdb.org/t/p/w500\(link)")
         }
-        genresLabel.text = "\(movie.releaseDate?.prefix(4) ?? ""),\(movie.originalLanguage?.uppercased() ?? ""),\(getGenresNames(movie))"
+        genresLabel.text = "\(movie.releaseDate?.prefix(4) ?? "")\(self.country),\(getGenresNames(movie))"
         imdbLabel.text = String(format:"%.1f", movie.voteAverage ?? 0.0)
         languageLabel.text = movie.originalLanguage?.uppercased()
         statusValueLabel.text = movie.status

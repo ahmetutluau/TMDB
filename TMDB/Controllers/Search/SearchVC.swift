@@ -68,7 +68,6 @@ class SearchVC: BaseVC {
             make.trailing.bottom.leading.equalToSuperview()
         }
     }
-
 }
 
 extension SearchVC: UISearchBarDelegate {
