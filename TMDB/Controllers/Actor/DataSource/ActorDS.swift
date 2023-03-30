@@ -55,7 +55,7 @@ extension ActorDS: UITableViewDataSource, UITableViewDelegate {
         switch indexPath.section {
         case 1: return UITableView.automaticDimension
         case 2: return CGFloat.dHeight * 350/1500
-        case 0: return CGFloat.dHeight * 550/1500
+        case 0: return CGFloat.dHeight * 650/1500
         default: return 0
         }
     }
