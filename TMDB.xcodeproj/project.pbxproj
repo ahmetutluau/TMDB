@@ -245,6 +245,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43077B6829E01B2800499016 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				43CEC6B629AF6437008F0370 /* SceneDelegate.swift */,
+				43CEC6B429AF6437008F0370 /* AppDelegate.swift */,
+				43CEC6BD29AF6437008F0370 /* Assets.xcassets */,
+				43CEC6C229AF6437008F0370 /* Info.plist */,
+				4390D7DA29D0B1150000A076 /* Launch Screen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		430A173A29C4AFE60044641E /* TableCells */ = {
 			isa = PBXGroup;
 			children = (
@@ -438,11 +450,7 @@
 				43CEC6DF29AF6AF5008F0370 /* Helpers */,
 				43CEC6EB29AF6EA9008F0370 /* Controllers */,
 				43CEC6D229AF6959008F0370 /* Networking */,
-				43CEC6B429AF6437008F0370 /* AppDelegate.swift */,
-				43CEC6B629AF6437008F0370 /* SceneDelegate.swift */,
-				43CEC6BD29AF6437008F0370 /* Assets.xcassets */,
-				43CEC6C229AF6437008F0370 /* Info.plist */,
-				4390D7DA29D0B1150000A076 /* Launch Screen.storyboard */,
+				43077B6829E01B2800499016 /* App */,
 			);
 			path = TMDB;
 			sourceTree = "<group>";
