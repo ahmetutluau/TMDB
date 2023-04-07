@@ -16,9 +16,12 @@ class BaseVC: UIViewController {
         observeViewModel()
         observeDataSource()
         setBackNavigationItem()
-        setNavBar()
         hideNavBar()
         hideKeyboardWhenTappedAround()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setNavBar()
     }
 }
 

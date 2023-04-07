@@ -54,7 +54,6 @@ class HomeVC: BaseVC {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.navigationBar.isTranslucent = false
         
         if let link = Defs.shared.defsUserModel?.avatar {
             ImageRequest.setImg(image: navLeftButton.profileImageView, imgLink: "http://image.tmdb.org/t/p/w500\(link)")
