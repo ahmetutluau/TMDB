@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		43077B6929E0525300499016 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43CEC6C229AF6437008F0370 /* Info.plist */; };
 		43263FC129BB52D7005A32D1 /* CastCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43263FC029BB52D7005A32D1 /* CastCollectionCell.swift */; };
 		4327DF6529B4B44800C99355 /* NowPlayingCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4327DF6429B4B44800C99355 /* NowPlayingCollectionCell.swift */; };
 		4327DF6729B4B54700C99355 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4327DF6629B4B54700C99355 /* UIView+Ext.swift */; };
@@ -252,7 +251,6 @@
 				43CEC6B629AF6437008F0370 /* SceneDelegate.swift */,
 				43CEC6B429AF6437008F0370 /* AppDelegate.swift */,
 				43CEC6BD29AF6437008F0370 /* Assets.xcassets */,
-				43CEC6C229AF6437008F0370 /* Info.plist */,
 				4390D7DA29D0B1150000A076 /* Launch Screen.storyboard */,
 			);
 			path = App;
@@ -452,6 +450,7 @@
 				43CEC6EB29AF6EA9008F0370 /* Controllers */,
 				43CEC6D229AF6959008F0370 /* Networking */,
 				43077B6829E01B2800499016 /* App */,
+				43CEC6C229AF6437008F0370 /* Info.plist */,
 			);
 			path = TMDB;
 			sourceTree = "<group>";
@@ -742,7 +741,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43077B6929E0525300499016 /* Info.plist in Resources */,
 				4390D7DB29D0B1150000A076 /* Launch Screen.storyboard in Resources */,
 				43CEC6BE29AF6437008F0370 /* Assets.xcassets in Resources */,
 			);
