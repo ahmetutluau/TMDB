@@ -1,5 +1,5 @@
 # TMDB
-This project a mobile application where you can login with your The MovieDB account or sign in. You can go to the details of the movies, read the comments or access the pictures and biographies of the people in the movie cast.
+This project is a mobile application where you can log in and sign in with your The MovieDB account. You can go to the details of the movies, read the comments or access the pictures and biographies of the people in the movie cast.
 
 ## Tech Stack
 
@@ -8,10 +8,10 @@ This project a mobile application where you can login with your The MovieDB acco
 - Reusable UI components
 - MVVM Architectural Pattern
 - UIKit
-- Generic Network Layer
+- Generic Networking Layer
 - Generic User Defaults 
-- Singleton Patern
-- Delegate / Protocol Patern
+- Singleton Pattern
+- Delegate / Protocol Pattern
 - OOP / POP
 - Alamofire
 - SnapKit
